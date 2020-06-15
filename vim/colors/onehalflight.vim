@@ -18,11 +18,12 @@ let colors_name="onehalflight"
 
 
 let s:black       = { "gui": "#383a42", "cterm": "237" }
-let s:red         = { "gui": "#e45649", "cterm": "167" }
-let s:green       = { "gui": "#50a14f", "cterm": "71" }
+let s:red         = { "gui": "#d76a5c", "cterm": "203" }
+let s:green       = { "gui": "#659e58", "cterm": "28" }
 let s:yellow      = { "gui": "#c18401", "cterm": "136" }
-let s:blue        = { "gui": "#0184bc", "cterm": "31" }
-let s:purple      = { "gui": "#a626a4", "cterm": "127" }
+let s:blue        = { "gui": "#497bea", "cterm": "33" }
+let s:dblue       = { "gui": "#3583b7", "cterm": "74" }
+let s:purple      = { "gui": "#98379f", "cterm": "128" }
 let s:cyan        = { "gui": "#0997b3", "cterm": "31" }
 let s:white       = { "gui": "#fafafa", "cterm": "231" }
 
@@ -36,7 +37,7 @@ let s:gutter_fg   = { "gui": "#d4d4d4", "cterm": "252" }
 let s:cursor_line = { "gui": "#f0f0f0", "cterm": "255" }
 let s:color_col   = { "gui": "#f0f0f0", "cterm": "255" }
 
-let s:selection   = { "gui": "#bfceff", "cterm": "153" }
+let s:selection   = { "gui": "#e5e5e6", "cterm": "254" }
 let s:vertsplit   = { "gui": "#f0f0f0", "cterm": "255" }
 
 
@@ -120,14 +121,14 @@ call s:h("WildMenu", s:fg, "", "")
 
 " Syntax colors {
 call s:h("Comment", s:comment_fg, "", "")
-call s:h("Constant", s:cyan, "", "")
+call s:h("Constant", s:yellow, "", "")
 call s:h("String", s:green, "", "")
 call s:h("Character", s:green, "", "")
 call s:h("Number", s:yellow, "", "")
 call s:h("Boolean", s:yellow, "", "")
 call s:h("Float", s:yellow, "", "")
 
-call s:h("Identifier", s:red, "", "")
+call s:h("Identifier", s:purple, "", "")
 call s:h("Function", s:blue, "", "")
 call s:h("Statement", s:purple, "", "")
 
@@ -146,10 +147,10 @@ call s:h("PreCondit", s:yellow, "", "")
 
 call s:h("Type", s:yellow, "", "")
 call s:h("StorageClass", s:yellow, "", "")
-call s:h("Structure", s:yellow, "", "")
+call s:h("Structure", s:dblue, "", "")
 call s:h("Typedef", s:yellow, "", "")
 
-call s:h("Special", s:blue, "", "")
+call s:h("Special", s:red, "", "")
 call s:h("SpecialChar", s:fg, "", "")
 call s:h("Tag", s:fg, "", "")
 call s:h("Delimiter", s:fg, "", "")
@@ -171,6 +172,8 @@ call s:h("GitGutterChangeDelete", s:red, s:gutter_bg, "")
 " Fugitive
 call s:h("diffAdded", s:green, "", "")
 call s:h("diffRemoved", s:red, "", "")
+" python-syntax
+call s:h("pythonKeywordOperator", s:purple, "", "")
 " }
 
 
